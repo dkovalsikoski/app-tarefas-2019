@@ -8,7 +8,7 @@ class CategoriaController{
   
   montar(){
     this._categoriaService.listarTodas()
-      .then(categorias => categorias.map(categoria => this.categorias.adicionar(categoria)))
+      .then(categorias => categorias.map(categoria => this._categorias.adicionar(categoria)))
       .then(() => this._categoriaView.montarListagem(this._categorias))
   }
 }

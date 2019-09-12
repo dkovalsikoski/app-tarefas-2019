@@ -4,7 +4,7 @@ class Categorias{
   }
 
   adicionar(categoria){
-    this.categorias.push(categoria)
+    this._categorias.push(categoria)
   }
 
   listar(){
